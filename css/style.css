@@ -1,23 +1,138 @@
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 body {
+  background-color: #535353;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
 
-h1,
-h2,
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-rows: 70%;
+}
+
+.header {
+  display:flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444444;
+}
+
+h1{
+  color: #ffffff;
+  padding: 15px;
+}
+
+h2 {
+  margin-right: 20px;
+  color: #444444;
+}
+.hero-banner {
+  background-image: url('https://as2.ftcdn.net/v2/jpg/05/06/47/83/1000_F_506478399_l0jgZ5ZWj80o8XYdEJtYfQhVYMU56qDJ.jpg');
+    background-position: top;
+  width: 100%;
+    height: 300px;
+    display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-wrap: wrap;
+}
 h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 10;
+}
+
+.navbar ul{
+  background-color: #535353;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover{
+  background-color:rgb(101, 101, 101);
+}
+
+.navbar li{
+  float: left;
 }
 
 p {
   margin: 0;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.page-section h3{
+  width: 20%;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.page-section .info{
+  border-left: 2px solid black;
+  padding-left: 20px;
+  width: 80%;
+}
+
+.picture-one{
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.contact-info ul{
+list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: left;
+}
+
+.contact-info a:hover {
+  background-color: #ffffff;
+}
+
+.contact-info li {
+  float: left;
 }
